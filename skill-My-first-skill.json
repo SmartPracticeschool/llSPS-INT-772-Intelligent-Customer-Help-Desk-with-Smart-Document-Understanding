@@ -1,0 +1,1008 @@
+{
+  "intents": [
+    {
+      "intent": "Specifications",
+      "examples": [
+        {
+          "text": "what are the specifications of this TV"
+        }
+      ]
+    },
+    {
+      "intent": "BoxContents",
+      "examples": [
+        {
+          "text": "what are the box contents"
+        },
+        {
+          "text": "whats inside the box"
+        }
+      ]
+    },
+    {
+      "intent": "TVController",
+      "examples": [
+        {
+          "text": "what things i can do with TVController"
+        }
+      ]
+    },
+    {
+      "intent": "Initial_Setup",
+      "examples": [
+        {
+          "text": "how to do the initial setup"
+        },
+        {
+          "text": "what about troubleshooting and maintenance"
+        },
+        {
+          "text": "how to select connected devices"
+        },
+        {
+          "text": "how to connect to internet"
+        }
+      ]
+    },
+    {
+      "intent": "Saftey_Instructions",
+      "examples": [
+        {
+          "text": "what are the saftey instructions"
+        }
+      ]
+    },
+    {
+      "intent": "HomeScreen",
+      "examples": [
+        {
+          "text": "can apps on homescreen be moved or deleted?"
+        }
+      ]
+    },
+    {
+      "intent": "Remote_Controller",
+      "examples": [
+        {
+          "text": "how to install batteries into remote controller"
+        },
+        {
+          "text": "how to pair tv to samsung smart remote"
+        },
+        {
+          "text": "tell me about standard remote controller"
+        },
+        {
+          "text": "tell me about samsung smart remote"
+        }
+      ]
+    },
+    {
+      "intent": "Thanks",
+      "examples": [
+        {
+          "text": "thanyou"
+        },
+        {
+          "text": "thanks"
+        },
+        {
+          "text": "thanks for the help"
+        }
+      ]
+    },
+    {
+      "intent": "Power_Consumption",
+      "examples": [
+        {
+          "text": "how to decrease power consumption"
+        }
+      ]
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "hii there"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hii"
+        },
+        {
+          "text": "hey"
+        }
+      ]
+    },
+    {
+      "intent": "Assembling",
+      "examples": [
+        {
+          "text": "how to mount TV on wall"
+        },
+        {
+          "text": "how to assemble tv"
+        }
+      ]
+    },
+    {
+      "intent": "Care",
+      "examples": [
+        {
+          "text": "what care should be taken of TV"
+        }
+      ]
+    },
+    {
+      "intent": "Warranty",
+      "examples": [
+        {
+          "text": "what are the warranty conditions"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "TVController",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "TVController",
+          "synonyms": [
+            "control menu"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "Assembling",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "assembling",
+          "synonyms": [
+            "ventilation",
+            "mounting",
+            "unite",
+            "join",
+            "assemble"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "troubleshooting",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "troubleshooting",
+          "synonyms": [
+            "no response",
+            "not working",
+            "errors",
+            "problems"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "care",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "care",
+          "synonyms": [
+            "healthcare"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "Remote_Controller",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Remote controller",
+          "synonyms": [
+            "universal remote",
+            "smart remote",
+            "standard remote"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "boxcontents",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "boxcontents",
+          "synonyms": [
+            "objects",
+            "supplies",
+            "included items",
+            "items"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "specifications",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "specifications",
+          "synonyms": [
+            "features",
+            "specs"
+          ]
+        }
+      ]
+    },
+    {
+      "entity": "homescreen",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "homescreen",
+          "synonyms": [
+            "deleting apps",
+            "moving apps",
+            "apps"
+          ]
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/web/rushikeshlaxman.jare2017%40vitstudent.ac.in_dev/default/my%20action.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1590489878295",
+      "conditions": "anything_else",
+      "dialog_node": "response_3_1590492232866",
+      "previous_sibling": "response_5_1590492228825"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_11.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1590489878295",
+      "conditions": "$webhook_result_11",
+      "dialog_node": "response_5_1590492228825"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1590489520327",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1590490636647",
+      "previous_sibling": "response_8_1590490631982"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_1.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1590489520327",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_8_1590490631982"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1590489815946",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1590492104357",
+      "previous_sibling": "response_6_1590492100770"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " \"<?$webhook_result_9.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1590489815946",
+      "conditions": "$webhook_result_9",
+      "dialog_node": "response_6_1590492100770"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_4_1590489710688",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1590491939525",
+      "previous_sibling": "response_9_1590491933291"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_6.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1590489710688",
+      "conditions": "$webhook_result_6",
+      "dialog_node": "response_9_1590491933291"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_2_1590489621255",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1590491652118",
+      "previous_sibling": "response_8_1590491646676"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_3.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1590489621255",
+      "conditions": "$webhook_result_3",
+      "dialog_node": "response_8_1590491646676"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1590489683449",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1590491872292",
+      "previous_sibling": "response_7_1590491866710"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_5.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1590489683449",
+      "conditions": "$webhook_result_5",
+      "dialog_node": "response_7_1590491866710"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_6_1590489781891",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1590492052482",
+      "previous_sibling": "response_1_1590492046789"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " \"<?$webhook_result_8.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1590489781891",
+      "conditions": "$webhook_result_8",
+      "dialog_node": "response_1_1590492046789"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_3_1590489575147",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1590491446117",
+      "previous_sibling": "response_5_1590491441533"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_2.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1590489575147",
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_5_1590491441533"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1590489746703",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1590491995255",
+      "previous_sibling": "response_6_1590491991299"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_7.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1590489746703",
+      "conditions": "$webhook_result_7",
+      "dialog_node": "response_6_1590491991299"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590489656003",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1590491798825",
+      "previous_sibling": "response_7_1590491795055"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_4.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1590489656003",
+      "conditions": "$webhook_result_4",
+      "dialog_node": "response_7_1590491795055"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_9_1590489845838",
+      "conditions": "anything_else",
+      "dialog_node": "response_5_1590492161793",
+      "previous_sibling": "response_4_1590492157539"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_10.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1590489845838",
+      "conditions": "$webhook_result_10",
+      "dialog_node": "response_4_1590492157539"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_4_1590489878295",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Box_contents",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#BoxContents",
+      "dialog_node": "node_3_1590489575147",
+      "previous_sibling": "node_3_1590489520327"
+    },
+    {
+      "type": "standard",
+      "title": "TV_Controller",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_10"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#TVController",
+      "dialog_node": "node_9_1590489845838",
+      "previous_sibling": "node_10_1590489815946"
+    },
+    {
+      "type": "standard",
+      "title": "Remote_Controller",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_7"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Remote_Controller",
+      "dialog_node": "node_10_1590489746703",
+      "previous_sibling": "node_4_1590489710688"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello,how can i help you.."
+              },
+              {
+                "text": "hii there,can i help you.."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Greetings",
+      "dialog_node": "node_3_1590489097262",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Assemble",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Assembling",
+      "dialog_node": "node_3_1590489520327",
+      "previous_sibling": "node_2_1590489419962"
+    },
+    {
+      "type": "standard",
+      "title": "Home_Screen",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_4"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#HomeScreen",
+      "dialog_node": "node_9_1590489656003",
+      "previous_sibling": "node_2_1590489621255"
+    },
+    {
+      "type": "standard",
+      "title": "Thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Glad to be of assistance.."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Thanks",
+      "dialog_node": "node_2_1590489419962",
+      "previous_sibling": "node_3_1590489097262"
+    },
+    {
+      "type": "standard",
+      "title": "Power_Consumption",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_6"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Power_Consumption",
+      "dialog_node": "node_4_1590489710688",
+      "previous_sibling": "node_10_1590489683449"
+    },
+    {
+      "type": "standard",
+      "title": "Specifications",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_9"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Specifications",
+      "dialog_node": "node_10_1590489815946",
+      "previous_sibling": "node_6_1590489781891"
+    },
+    {
+      "type": "standard",
+      "title": "Care",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Care",
+      "dialog_node": "node_2_1590489621255",
+      "previous_sibling": "node_3_1590489575147"
+    },
+    {
+      "type": "standard",
+      "title": "Saftey_Instructions",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_8"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Saftey_Instructions",
+      "dialog_node": "node_6_1590489781891",
+      "previous_sibling": "node_10_1590489746703"
+    },
+    {
+      "type": "standard",
+      "title": "Initial_Setup",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_5"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Initial_Setup",
+      "dialog_node": "node_10_1590489683449",
+      "previous_sibling": "node_9_1590489656003"
+    },
+    {
+      "type": "standard",
+      "title": "Warranty",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_11"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Warranty",
+      "dialog_node": "node_4_1590489878295",
+      "previous_sibling": "node_9_1590489845838"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Welcome,this is your personal assistant available at your service 24x7"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "My first skill",
+  "language": "en",
+  "description": ""
+}
